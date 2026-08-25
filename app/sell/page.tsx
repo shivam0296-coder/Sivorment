@@ -1,0 +1,6 @@
+import type { Metadata } from 'next';
+import { SellerApply } from '../components/account/SellerApply';
+import { SiteFooter } from '../components/navigation/SiteFooter';
+import { SiteHeader } from '../components/navigation/SiteHeader';
+export const metadata: Metadata = { title: 'Sell Plants | Sivorment', description: 'Join the Sivorment multi-city plant marketplace as a verified nursery or plant seller.' };
+export default function SellPage() { return <main className="light-page"><SiteHeader /><section className="sell-hero"><div><p className="eyebrow dark"><span /> For growers and nurseries</p><h1>GROW A BUSINESS.<br /><em>GROW A WORLD.</em></h1><p>List living inventory once, choose the cities you serve, manage variant prices and fulfil orders from one connected seller system.</p></div><SellerApply /></section><section className="seller-benefits"><article><span>01</span><h2>One catalogue</h2><p>Create plants and variants with structured care, image and shipping data.</p></article><article><span>02</span><h2>City control</h2><p>Set local stock, pricing, sellers, delivery times and fees independently.</p></article><article><span>03</span><h2>Clear operations</h2><p>Manage orders, inventory and sales through role-protected tools.</p></article></section><SiteFooter /></main>; }
